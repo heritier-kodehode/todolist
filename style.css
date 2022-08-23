@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.display{
+    width: 350px;
+    background-color: rgb(184, 248, 248);
+    height: 600px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+#form{
+  display: flex;
+  align-items: center;
+  background: url("./pawel-czerwinski-M5gwfVh5Mhs-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  justify-content: space-between;
+  height: 30%;
+}
+
+.ourinputs{
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 30px;
+  color: rgb(14, 14, 157);
+}
+
+.btn{
+  width: 100px;
+  height: 130px;
+  font-size: 30px;
+  color: white;
+  background-color: rgb(191, 70, 219);
+  border: none;
+  cursor: pointer;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+label{
+    margin: 4px 0;
+
+}
+
+#titleinput{
+  padding: 10px;
+  background-color: rgb(197, 240, 255);
+  border: none;
+  outline: none;
+}
+
+#infoinput{
+  padding: 10px;
+  background-color: rgb(28, 116, 148);
+  border: none;
+  color: white;
+  outline: none;
+}
+#infoinput::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+  }
+#infoinput::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+  }
+#infoinput:-ms-input-placeholder { /* IE 10+ */
+    color: white;
+  }
+#infoinput:-moz-placeholder { /* Firefox 18- */
+    color: white;
+}
+
+.translate{
+    animation-name: translatein;
+    animation-duration: .2s;
+}
+
+@keyframes translatein {
+    0%{
+      transform: translateX(-100px);
+    }
+
+
+    100%{
+     transform: translateX(0);
+    }
+
+}
+
+.popobj{
+   animation-name: popthisbtnwidth;
+   animation-duration: .2s;
+}
+
+@keyframes popthisbtnwidth {
+    0%{
+        width: 0;
+        
+    }
+    100%{
+        width: 100px;
+
+    }
+}
+
+
+
+
+
+.itemsList{
+   
+}
+
+.item{
+  margin: 10px;
+  height: auto;
+  background-color: aliceblue;
+  padding: 5px;
+  border: 2px solid  rgb(191, 70, 219);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.itemtitle{
+
+}
+
+.iteminfo{
+    
+}
+
+.fadein{
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+@keyframes fadein {
+    0%{
+       opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+
+.popheight{
+    animation-name: popthisheight;
+    animation-duration: 2s;
+    overflow: hidden;
+}
+@keyframes popthisheight {
+    0%{
+        height: 0;
+        padding: 0;
+        font-size: 0;
+    }
+    100%{
+        height: min-content;
+    }
+}
+
+
+.footer{
+
+}
