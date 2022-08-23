@@ -109,9 +109,6 @@ label{
 }
 
 
-
-
-
 .itemsList{
    
 }
@@ -123,15 +120,26 @@ label{
   padding: 5px;
   border: 2px solid  rgb(191, 70, 219);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  
 }
 
 .itemtitle{
-
+  color: rgb(116, 42, 132);
 }
 
 .iteminfo{
-    
+  color: rgb(86, 19, 101);
 }
+
+.removebtn{
+  padding: 0 10px;
+  font-size: 30px;
+  border: none;
+  background-color: rgb(238, 106, 106);
+  cursor: pointer;
+}
+
 
 .fadein{
     animation-name: fadein;
