@@ -5,13 +5,32 @@
     padding: 0;
     margin: 0;
 }
-
+body{
+  margin-top: 20px;
+  background: linear-gradient(-45deg, #9e928e, #d389a5, #7ed1ef, #7ef0d5);
+	background-size: 400% 400%;
+	animation: gradientbody 15s ease infinite;
+}
+@keyframes gradientbody {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 .display{
     width: 350px;
     background-color: rgb(184, 248, 248);
     height: 600px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    padding: 0 1px;
+    border: 3px solid white;
 }
 
 #form{
@@ -42,6 +61,15 @@
   cursor: pointer;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
+}
+
+.btn:active{
+   background: rgba(164, 60, 187, 0.897);
+   padding: 5px;
+   color: darkgray;
+   font-size: 28px;
+   width: 95px;
+   height: 125px;
 }
 
 label{
@@ -111,35 +139,70 @@ label{
 
 
 .itemsList{
- 
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+}
+.itemsList::-webkit-scrollbar {
+  width: 12px; 
+  margin: 0 0 0 5px;   
+  height: 30px;          
+}
+.itemsList::-webkit-scrollbar-track {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);      /* color of the tracking area */
+}
+.itemsList::-webkit-scrollbar-thumb {
+  background-color: rgb(210, 172, 219);    
+  border-radius: 20px;     
+  border: 2px solid rgb(43, 68, 94);  
 }
 
 
 .item{
-  margin: 10px;
+  margin: 4px;
   height: auto;
   background-color: aliceblue;
   padding: 5px;
   border: 2px solid  rgb(191, 70, 219);
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   display: flex;
-  
+  justify-content: space-between;
+  width: 310px;
+ 
 }
 
 .itemtitle{
   color: rgb(116, 42, 132);
+  border-bottom: 1px solid purple;
+ 
 }
 
 .iteminfo{
   color: rgb(86, 19, 101);
+  height: auto;
+  /*word wrap method*/
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  white-space: normal;
 }
-
+.itemdate{
+  color: rgb(7, 77, 77);
+  background-color: rgb(193, 251, 251);
+  margin: 7px 0 0 0;
+}
+.item-content{
+  width: 250px;
+}
 .removebtn{
   padding: 0 10px;
   font-size: 30px;
   border: none;
   background-color: rgb(238, 106, 106);
   cursor: pointer;
+  height: 50px;
+  
 }
 
 
